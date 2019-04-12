@@ -1,0 +1,58 @@
+package sv.com.sdfp.models.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Productos")
+
+public class Productos {
+	@Id private long Id_Producto;
+	@Column private String nombre;
+	@Column private int existencia;
+	@Column private double precio;
+	//arreglar llaves foraneas
+	@Column private long Id_Proveedor;
+	@Column private long Id_Categoria;
+	public long getId_Producto() {
+		return Id_Producto;
+	}
+	public void setId_Producto(long id_Producto) {
+		Id_Producto = id_Producto;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public int getExistencia() {
+		return existencia;
+	}
+	public void setExistencia(int existencia) {
+		this.existencia = existencia;
+	}
+	public double getPrecio() {
+		return precio;
+	}
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	public long getId_Proveedor() {
+		return Id_Proveedor;
+	}
+	public void setId_Proveedor(long id_Proveedor) {
+		Id_Proveedor = id_Proveedor;
+	}
+	public long getId_Categoria() {
+		return Id_Categoria;
+	}
+	public void setId_Categoria(long id_Categoria) {
+		Id_Categoria = id_Categoria;
+	}
+	
+	
+	
+}
