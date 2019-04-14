@@ -1,6 +1,5 @@
 package sv.com.sdfp.models.services;
 
-public interface IAreasService {
-	
+public interface ICategoriasService {
 
 }
