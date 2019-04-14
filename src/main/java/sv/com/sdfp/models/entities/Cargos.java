@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table (name="Cargos")
+@Table (name="cargos")
 public class Cargos {
 	@Id private long Id_Cargo;
 	@Column private long nombre;

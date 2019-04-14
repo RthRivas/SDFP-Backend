@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "Factura")
+@Table (name = "factura")
 public class Factura {
 	@Id private long Codigo_Factura;
 	@Column private Date fecha;
