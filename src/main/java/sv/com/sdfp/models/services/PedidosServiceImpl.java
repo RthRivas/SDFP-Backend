@@ -36,7 +36,7 @@ public class PedidosServiceImpl implements IPedidosService {
 	@Override
 	public void delete(Long Id_Pedido) {
 		// TODO Auto-generated method stub
-		
+		pedidosDao.deleteById(Id_Pedido);
 	}
 
 }
