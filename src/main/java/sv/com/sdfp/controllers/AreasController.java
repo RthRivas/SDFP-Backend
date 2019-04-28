@@ -10,7 +10,7 @@ import sv.com.sdfp.models.entities.Areas;
 import sv.com.sdfp.models.services.IAreasService;
 
 @RestController
-@RequestMapping("/ast/api/vl/detalle")
+@RequestMapping("/ast/api/vl/areas")
 public class AreasController {
 	
 	@Autowired

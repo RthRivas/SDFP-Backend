@@ -10,7 +10,7 @@ import sv.com.sdfp.models.entities.Cargos;
 import sv.com.sdfp.models.services.ICargosService;
 
 @RestController
-@RequestMapping("/ast/api/vl/detalle")
+@RequestMapping("/ast/api/vl/cargos")
 public class CargosController {
 	
 	@Autowired

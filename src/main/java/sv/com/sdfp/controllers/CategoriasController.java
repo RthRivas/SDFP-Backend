@@ -10,7 +10,7 @@ import sv.com.sdfp.models.entities.Categorias;
 import sv.com.sdfp.models.services.ICategoriasService;
 
 @RestController
-@RequestMapping("/ast/api/vl/detalle")
+@RequestMapping("/ast/api/vl/categorias")
 public class CategoriasController {
 	
 	@Autowired
