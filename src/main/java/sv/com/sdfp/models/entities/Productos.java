@@ -16,6 +16,14 @@ public class Productos {
 	//arreglar llaves foraneas
 	@Column private long Id_Proveedor;
 	@Column private long Id_Categoria;
+	@Column private String fotourl;
+	
+	public String getFotourl() {
+		return fotourl;
+	}
+	public void setFotourl(String fotourl) {
+		this.fotourl = fotourl;
+	}
 	public long getId_Producto() {
 		return Id_Producto;
 	}

@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Table(name="proveedores")
 public class Proveedores {
 	@Id private long Id_Proveedor;
-	@Column private String nombre;
+	@Column private String nombreP;
 	@Column private int telefono;
 	@Column private String address;
 	public long getId_Proveedor() {
@@ -19,10 +19,10 @@ public class Proveedores {
 		Id_Proveedor = id_Proveedor;
 	}
 	public String getNombre() {
-		return nombre;
+		return nombreP;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombre(String nombreP) {
+		this.nombreP = nombreP;
 	}
 	public int getTelefono() {
 		return telefono;

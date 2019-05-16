@@ -9,18 +9,18 @@ import javax.persistence.Table;
 @Table (name = "categorias")
 public class Categorias {
 	@Id private long Id_Categoria;
-	@Column private String nombre;
+	@Column private String nombreCa;
 	public long getId_Categoria() {
 		return Id_Categoria;
 	}
 	public void setId_Categoria(long id_Categoria) {
 		Id_Categoria = id_Categoria;
 	}
-	public String getNombre() {
-		return nombre;
+	public String getNombreCa() {
+		return nombreCa;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombreCa(String nombreCa) {
+		this.nombreCa = nombreCa;
 	}
 	
 
