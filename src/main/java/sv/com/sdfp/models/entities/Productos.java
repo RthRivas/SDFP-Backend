@@ -2,6 +2,7 @@ package sv.com.sdfp.models.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,7 +10,7 @@ import javax.persistence.Table;
 @Table(name="productos")
 
 public class Productos {
-	@Id private long Id_Producto;
+	@Id @GeneratedValue private long Id_Producto;
 	@Column private String nombre;
 	@Column private int existencia;
 	@Column private double precio;
@@ -18,6 +19,22 @@ public class Productos {
 	@Column private long Id_Categoria;
 	@Column private String fotourl;
 	
+	public Productos () 
+	{
+		
+	}
+	public Productos( String nombre, int exis,double precio, int prove, int cate,
+			String fotourl) {
+		// TODO Auto-generated constructor stub
+		
+		this.nombre=nombre;
+		this.existencia=exis;
+		this.precio=precio;
+		this.Id_Proveedor=prove;
+		this.Id_Categoria=cate;
+		this.fotourl=fotourl;
+	}
+
 	public String getFotourl() {
 		return fotourl;
 	}

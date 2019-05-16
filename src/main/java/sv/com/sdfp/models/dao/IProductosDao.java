@@ -6,4 +6,5 @@ import sv.com.sdfp.models.entities.Productos;
 
 public interface IProductosDao extends CrudRepository<Productos, Long>{
 
+
 }
