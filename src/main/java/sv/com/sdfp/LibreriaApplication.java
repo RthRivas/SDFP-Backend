@@ -26,9 +26,9 @@ public class LibreriaApplication {
 			produc.save(new Productos("colores Facela",10,3.75,1,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/colores.png"));
 			produc.save(new Productos("Compas",45,1.25,1,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/compas.png"));
 			produc.save(new Productos("Cuaderno rayado",250,1.25,1,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/cuaderno.png"));
-			produc.save(new Productos("Lapicero",500,0.20,1,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/geometria.png"));
-			produc.save(new Productos("Lapiz",500,0.20,5,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/lapicero.png"));
-			produc.save(new Productos("Estuche de geometria",150,3.50,1,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/lapiz.png"));
+			produc.save(new Productos("Lapicero",500,0.20,1,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/lapicero.png"));
+			produc.save(new Productos("Lapiz",500,0.20,5,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/lapiz.png"));
+			produc.save(new Productos("Estuche de geometria",150,3.50,1,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/geometria.png"));
 			produc.save(new Productos("Clip",350,0.02,1,2,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/oficina/clip.png"));
 			produc.save(new Productos("Engrapadora",200,2.50,1,2,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/oficina/engrapadora.png"));
 			produc.save(new Productos("Perforadora",150,3.75,1,2,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/oficina/perforadora.png"));
