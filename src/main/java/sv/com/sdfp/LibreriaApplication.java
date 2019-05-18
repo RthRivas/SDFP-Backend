@@ -6,9 +6,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-
+import net.bytebuddy.asm.Advice.Return;
 import sv.com.sdfp.models.entities.Productos;
+import sv.com.sdfp.models.entities.Proveedores;
 import sv.com.sdfp.models.services.IProductosService;
+import sv.com.sdfp.models.services.IProveedoresService;
 
 
 @SpringBootApplication
@@ -23,7 +25,7 @@ public class LibreriaApplication {
 		return (args) -> {
 			produc.save(new Productos("colores Facela",10,3.75,1,1,"https://raw.githubusercontent.com/RthRivas/SDFP-Backend/master/src/assets/img/productos/estudiantes/colores.png"));
 			produc.save(new Productos("Compas",45,1.25,1,1,"http"));
-			produc.save(new Productos("Cuaderno rayado",250,1.25,1,1,"http"));			produc.save(new Productos("Blaca nieve",14,18.99,5,1,"http"));
+			produc.save(new Productos("Cuaderno rayado",250,1.25,1,1,"http"));
 			produc.save(new Productos("Lapicero",500,0.20,1,1,"http"));
 			produc.save(new Productos("Lapiz",500,0.20,5,1,"http"));
 			produc.save(new Productos("Estuche de geometria",150,3.50,1,1,"http"));
@@ -43,6 +45,14 @@ public class LibreriaApplication {
 			produc.save(new Productos("Ciudades de papel",10,55.00,3,4,"http"));
 			
 			
+		};
+	}
+	@Bean
+	public CommandLineRunner setupProve (IProveedoresService servi) {
+		return (arg) -> {
+			servi.save(new Proveedores("Facela",26611478,"San Miguel"));
+			servi.save(new Proveedores("La Libreria",26051789,"San Salvador"));
+			servi.save(new Proveedores("Editorial Legado",22021411,"Ave. san Benito, San salvador"));
 		};
 	}
 
